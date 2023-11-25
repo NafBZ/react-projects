@@ -3,47 +3,41 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import { useState, useEffect } from "react";
 
-const pizzaData = [
+const foodData = [
   {
-    name: "Focaccia",
-    ingredients: "Bread with italian olive oil and rosemary",
+    name: "Vegetable Biriyani",
     price: 6,
-    photoName: "pizzas/focaccia.jpg",
+    photoName: "food/vegBr.jpg",
     soldOut: false,
   },
   {
-    name: "Pizza Margherita",
-    ingredients: "Tomato and mozarella",
+    name: "Mutton Biriyani",
     price: 10,
-    photoName: "pizzas/margherita.jpg",
+    photoName: "food/mutton.jpg",
     soldOut: false,
   },
   {
-    name: "Pizza Spinaci",
-    ingredients: "Tomato, mozarella, spinach, and ricotta cheese",
+    name: "Chapli Kebab",
     price: 12,
-    photoName: "pizzas/spinaci.jpg",
+    photoName: "food/ckebab.jpg",
     soldOut: false,
   },
   {
-    name: "Pizza Funghi",
-    ingredients: "Tomato, mozarella, mushrooms, and onion",
+    name: "Chicken Biriyani",
     price: 12,
-    photoName: "pizzas/funghi.jpg",
+    photoName: "food/chicken.jpg",
     soldOut: false,
   },
   {
-    name: "Pizza Salamino",
-    ingredients: "Tomato, mozarella, and pepperoni",
+    name: "Chicken Tikka",
     price: 15,
-    photoName: "pizzas/salamino.jpg",
+    photoName: "food/ctikka.jpg",
     soldOut: true,
   },
   {
-    name: "Pizza Prosciutto",
-    ingredients: "Tomato, mozarella, ham, aragula, and burrata cheese",
+    name: "Beef Biriyani",
     price: 18,
-    photoName: "pizzas/prosciutto.jpg",
+    photoName: "food/beef.jpg",
     soldOut: false,
   },
 ];
@@ -61,24 +55,25 @@ function App() {
 function Header() {
   return (
     <header className="header">
-      <h1>
-        Welcome to Pizza Heaven <span>🍕</span>
-      </h1>
+      <h1>Biriyani House</h1>
     </header>
   );
 }
 
 function Menu() {
-  const numberOfPizzas = pizzaData.length;
+  const numberOfPizzas = foodData.length;
 
   return (
     <main className="menu">
       <h2>Our Menu</h2>
       {numberOfPizzas > 0 ? (
         <React.Fragment>
-          <p>We sell authentic Italian pizza!</p>
+          <p>
+            We sell authentic desi biriyani, kebabs, curry and lots of south
+            asian snacks!
+          </p>
           <ul className="pizzas">
-            {pizzaData.map((pizza) => (
+            {foodData.map((pizza) => (
               <Pizza pizzaObj={pizza} key={pizza.name} />
             ))}
           </ul>
@@ -99,7 +94,6 @@ function Pizza({ pizzaObj }) {
       <img src={pizzaObj.photoName} alt={pizzaObj.name} />
       <li>
         <h3>{pizzaObj.name}</h3>
-        <p>{pizzaObj.ingredients}</p>
         <span>{pizzaObj.soldOut ? "Sold Out" : pizzaObj.price + 2 + "€"} </span>
       </li>
     </div>
