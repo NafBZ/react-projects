@@ -69,7 +69,7 @@ root.render(
           { skill: "React", emoji: "👦", color: "#872341" },
         ]}
       />
-      <App
+      {/* <App
         avatarSrc="superhero.png"
         name="Super Hero"
         intro="Super Hero is a superhero whose superpower is to develop harmony in the world."
@@ -88,7 +88,7 @@ root.render(
           { skill: "JavaScript", emoji: "🤝", color: "#BE3144" },
           { skill: "React", emoji: "👦", color: "#872341" },
         ]}
-      />
+      /> */}
     </div>
   </StrictMode>
 );
