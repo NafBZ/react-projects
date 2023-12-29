@@ -4,7 +4,9 @@ This repository contains a collection of my React projects. Each project is loca
 
 ## Project: [Tripvisor](./tripvisor/)
 Used State Management (Derive State, State Lifting)
-<img src="tripvisor/public/trip.gif" />
+
+
+<img src="tripvisor/public/trip.gif" width="300" height="200"/>
 
 
 ## Project: [ITech-Card](./intro_card/)
