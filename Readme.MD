@@ -6,7 +6,7 @@ This repository contains a collection of my React projects. Each project is loca
 Used State Management (Derive State, State Lifting)
 
 
-<img src="tripvisor/public/trip.gif" width="900" height="600"/>
+<img src="tripvisor/public/trip.gif"/>
 
 
 ## Project: [ITech-Card](./intro_card/)
