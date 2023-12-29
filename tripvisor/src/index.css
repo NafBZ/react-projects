@@ -28,7 +28,7 @@ body {
 h1 {
   text-align: center;
   background-color: #b2a59b;
-  font-family: "Monoton";
+  font-family: "";
   font-size: 8rem;
   text-transform: uppercase;
   font-weight: 400;
@@ -44,6 +44,7 @@ h1 {
   align-items: center;
   justify-content: center;
   gap: 0.8rem;
+  font-family: "Trebuchet MS";
 }
 
 h3 {
@@ -55,7 +56,8 @@ select,
 input {
   background-color: #d9d9d9;
   color: #5a3e2b;
-  font-family: inherit;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border: none;
   border-radius: 10rem;
   padding: 1.2rem 3.2rem;
@@ -67,7 +69,8 @@ input {
 button {
   background-color: #d9d9d9;
   color: #ffffff;
-  font-family: inherit;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
   border: none;
   border-radius: 10rem;
   padding: 1.2rem 3.2rem;
@@ -84,8 +87,7 @@ button {
 .list {
   background-color: #ded0b6;
   color: #514949;
-  padding: 4rem;
-
+  padding: 4rem 0;
   display: flex;
   justify-content: space-between;
   flex-direction: column;
@@ -106,13 +108,13 @@ button {
   list-style: none;
   width: 80%;
   overflow: hidden;
-  -ms-overflow-style: none;
 
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 1.2rem;
   justify-content: center;
   align-content: start;
+  font-family: "Trebuchet MS";
 }
 
 .list li {
@@ -141,6 +143,7 @@ input[type="checkbox"] {
   text-align: center;
   font-weight: 700;
   padding: 3.2rem 0;
+  font-family: "Trebuchet MS";
 }
 
 footer {
@@ -148,4 +151,5 @@ footer {
   left: 0;
   bottom: 0;
   right: 0;
+  color: #e7e6e5;
 }
